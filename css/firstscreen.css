@@ -1,0 +1,250 @@
+.firstscreen {
+  background: url('../img/mask.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  min-height: 100vh;
+  display: flex;
+  padding: 20px 0;
+  position: relative;
+}
+
+.firstscreen::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.container-firstscreen {
+  width: 100%;
+  flex: 1 1 auto;
+  max-width: width 1170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.firstscreen-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.firstscreen-block {
+  max-width: 544px;
+}
+
+.firstscreen-logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  color: #ffffff;
+}
+
+.firstscreen-logo::after {
+  content: 'IT';
+  color: #ec7979;
+}
+
+.firstscreen-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  color: #ffffff;
+}
+
+/* линия - псевдокласс*/
+.firstscreen-title::after {
+  content: '';
+  display: block;
+  background: #ffffff;
+  width: 64px;
+  height: 1px;
+  position: relative;
+  margin: 32px 0 39px 0;
+}
+
+.firstscreen-subtitle {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  max-width: 282px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 39px;
+}
+
+.firstscreen-btn {
+  max-width: 135px;
+  height: 36px;
+  transition-duration: 1.5s;
+  display: flex;
+  align-items: center;
+}
+
+.firstscreen-btn a {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: #ec7979;
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 0.3em;
+  overflow: hidden;
+  border: 1px solid #ec7979;
+  box-shadow: 1px 1px 20px 1px #ec7979;
+  background: rgba(49, 42, 42, 0.8);
+  cursor: pointer;
+}
+
+/* псевдоэлемент */
+.firstscreen-btn a:hover {
+  color: #ec7979;
+  font-size: 15px;
+  border: 1px solid;
+  box-shadow: 0px 0px 13px 6px #ec7979;
+}
+
+.firstscreen-btn:hover {
+  transform: rotate3d(15, 150, 15, 360deg);
+  transition-duration: 1.1s;
+}
+
+.firstscreen-btn a:active {
+  color: #ec7979;
+  border: 2px solid;
+  transform: scale(1.1, 1.2);
+  border-radius: 0.2em;
+  box-shadow: 1px 1px 5px 15px rgba(2, 16, 31, 0.76);
+}
+
+.firstscreen__blank {
+  max-width: 370px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.firstscreen__blank-name {
+  margin: 0 auto;
+  margin-bottom: 19px;
+}
+
+.firstscreen__blank-email {
+  margin: 0 auto;
+  margin-bottom: 19px;
+}
+
+.firstscreen__blank-password {
+  margin: 0 auto 60px auto;
+}
+
+.firstscreen__blank-head {
+  text-align: center;
+  color: #333333;
+  padding: 10px 0px;
+  margin-bottom: 44px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.firstscreen__blank-head-FREE {
+  color: #ec7979;
+}
+
+.firstscreen-form {
+  line-height: 30px;
+  color: #bdbdbd;
+}
+
+.firstscreen-input {
+  border-bottom: 1px solid #bdbdbd;
+  max-width: 252px;
+}
+
+.firstscreen__blank-btn {
+  height: 54px;
+  background-color: #ec7979;
+  display: flex;
+  justify-content: center;
+  border-radius: 0 0 8px 8px;
+}
+
+.firstscreen__blank-btn button {
+  background-color: #ec7979;
+  border: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: #ffffff;
+  padding: 20px 143px;
+  cursor: pointer;
+  outline: none;
+}
+
+.firstscreen__blank-btn button:hover {
+  color: #f74141;
+  box-shadow: inset 0px 0px 1px 999px rgb(250, 189, 189);
+}
+
+.firstscreen__blank-btn button:active {
+  color: #050202;
+  box-shadow: inset 0px 0px 1px 999px rgb(250, 189, 189);
+}
+
+@media screen and (max-width: 943px) {
+  .firstscreen-row {
+    flex-direction: column;
+  }
+  .firstscreen-btn {
+    margin: 20px auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .firstscreen-logo {
+    font-size: 2.8em;
+  }
+
+  .firstscreen-title {
+    font-size: 1.8em;
+  }
+
+  .firstscreen__blank {
+    max-width: 200px;
+  }
+  .firstscreen-btn {
+    margin-bottom: 30px;
+  }
+  .firstscreen__blank-btn button {
+    font-size: 12px;
+    padding: 10px 80px;
+  }
+}
+
+@media screen and (max-width: 379px) {
+  .firstscreen-logo {
+    font-size: 2.4em;
+  }
+
+  .firstscreen-title {
+    font-size: 1.4em;
+  }
+
+  .firstscreen__blank {
+    max-width: 200px;
+  }
+  .firstscreen-btn {
+    margin-bottom: 30px;
+  }
+  .firstscreen__blank-btn button {
+    font-size: 12px;
+    padding: 10px 80px;
+  }
+}

@@ -1,0 +1,88 @@
+.header {
+  background-color: #000000;
+}
+
+.header-row {
+  display: flex;
+  padding: 20px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: white;
+}
+
+.header-logo::after {
+  content: 'IT';
+  color: #ec7979;
+}
+
+.navigation-list {
+  list-style: none;
+  display: flex;
+  margin: 0 -24px;
+}
+
+.navigation-list-item {
+  margin: 0 24px;
+  transition-duration: 1s;
+}
+
+.navigation-list-item a {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  line-height: 20px;
+}
+
+.navigation-list-item:hover {
+  transform: scale(1.2, 1.2);
+  color: #ec7979;
+}
+
+.navigation-list-item a:hover {
+  color: #ec7979;
+}
+
+.navigation-list-item:first-child {
+  margin-left: 0;
+}
+
+@media screen and (max-width: 576px) {
+  .navigation-list-item {
+    margin: 0 14px;
+  }
+  .header-row {
+    padding: 5px 0;
+}
+
+@media screen and (max-width: 475px) {
+  .navigation-list-item {
+    margin: 0 6px;
+  }
+  .header-row {
+    padding: 1px 0;
+}
+}
+
+@media screen and (max-width: 399px) {
+  .navigation-list-item {
+    margin: 0 2px;
+  }
+  .header-logo {
+    font-weight: 100;
+    font-size: 20px;
+  }
+  .navigation-list-item a {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    line-height: 10px;
+  }
+}

@@ -1,0 +1,140 @@
+.customers-title {
+  margin: 80px 0 0px 0;
+}
+
+/* линия */
+.customers-title::after {
+  content: '';
+  display: block;
+  background: #e72424;
+  width: 64px;
+  height: 2px;
+  position: absolute;
+}
+
+.customers-subtitle {
+  margin-bottom: 67px;
+}
+
+.customers-row {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.customers-card {
+  max-width: 298px;
+  margin: 0 8px 0 8px;
+  padding-bottom: 119px;
+}
+
+.customers-description {
+  max-width: 298px;
+  background: #e2e2e2;
+  border-radius: 7px;
+  position: relative;
+}
+
+.triangle {
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 17px solid transparent;
+  border-top: 12px solid #e2e2e2;
+  border-right: 17px solid transparent;
+  position: absolute;
+  top: 100%;
+  left: 39px;
+}
+
+.customers-item {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.customers-icon-block {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.customers__item-icon {
+  height: 100%;
+}
+
+.customers-description p {
+  max-width: 270px;
+  color: #86878b;
+  font-family: Open Sans;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 22px;
+  text-align: center;
+  padding: 10px;
+}
+
+.customers-initials {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  margin-bottom: 12px;
+}
+
+.customers-post {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: right;
+  color: #86878b;
+}
+
+@media screen and (max-width: 1000px) {
+  .customers-title {
+    font-size: 1.8em !important;
+  }
+  .customers-subtitle {
+    font-size: 0.7em !important;
+  }
+  .customers-description p,
+  .customers-initials {
+    font-size: 0.95em !important;
+  }
+  .customers-post {
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (max-width: 887px) {
+  .customers-card {
+    padding-bottom: 15px;
+    width: 230px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .customers-card {
+    width: 350px;
+  }
+  .customers-title {
+    font-size: 1.4em !important;
+  }
+  .customers-subtitle {
+    font-size: 0.6em !important;
+  }
+  .customers-description p,
+  .customers-initials {
+    font-size: 0.85em !important;
+  }
+  .customers-post {
+    font-size: 0.6em;
+  }
+}

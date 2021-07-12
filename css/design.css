@@ -1,0 +1,121 @@
+.design {
+  background: url(/img/town.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  /* box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.678) inset; */
+}
+
+.design::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.design-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  padding-top: 58px;
+  line-height: 42px;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* линия */
+.design-title::after {
+  content: '';
+  display: block;
+  background: rgb(255, 255, 255, 0.8);
+  width: 64px;
+  height: 2px;
+  position: relative;
+  margin: 34px auto;
+}
+
+.design-subtitle {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  color: rgb(255, 255, 255, 0.8);
+  margin-bottom: 56px;
+}
+
+.design-btn-block {
+  padding-bottom: 38px;
+}
+
+.design-btn {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  max-width: 135px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.design-btn a {
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 13px;
+  overflow: hidden;
+  border: 1px solid #ffffff;
+  padding: 11px 26px;
+  box-shadow: -5px 5px 10px 5px rgba(186, 189, 46, 0.342);
+  transition-duration: 1.5s;
+}
+
+/* псевдоэлемент */
+.design-btn a:hover {
+  color: rgb(6, 230, 174);
+  font-size: 15px;
+  border-radius: 5px 15px 5px 15px;
+  transform: scale(1.1, 1.1);
+  transition-duration: 1.3s;
+  box-shadow: 5px -5px 13px 5px rgba(5, 231, 137, 0.459);
+}
+
+.design-btn a:active {
+  color: rgba(8, 239, 255, 0.815);
+  border: 2px double;
+  transform: scale(1.1, 1.2);
+  border-radius: 0.2em 1.1em;
+  transition-duration: 0.5s;
+  box-shadow: 5px -5px 20px 15px rgba(13, 51, 94, 0.342);
+}
+
+@media screen and (max-width: 810px) {
+  .design-title {
+    font-size: 1.6em;
+  }
+
+  .design-subtitle {
+    font-size: 0.9em;
+  }
+
+  .design-btn {
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .design-title {
+    font-size: 1.4em;
+  }
+
+  .design-subtitle {
+    font-size: 0.8em;
+  }
+
+  .design-btn {
+    font-size: 0.8em;
+  }
+}

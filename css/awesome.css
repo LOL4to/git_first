@@ -1,0 +1,82 @@
+.awesome {
+}
+
+.awesome-title {
+  margin: 107px 0 0 0;
+}
+
+.awesome-subtitle {
+  padding-bottom: 36px;
+}
+
+.awesome-row {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.awesome-card {
+  max-width: 350px;
+  margin: 31px 5px 0 5px;
+}
+
+.awesome-item__circle {
+  border: 1px solid #e72424;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 29px;
+}
+
+/* третья картинка */
+.awesome-item__icon-lighting {
+  max-width: 35px;
+  max-height: 35px;
+}
+
+.awesome-item__text {
+  margin-bottom: 25px;
+  text-align: center;
+}
+.awesome-item__subtext p {
+  padding-bottom: 109px;
+  margin: auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 749px) {
+  .awesome-title {
+    font-size: 2em !important;
+  }
+
+  .awesome-item__subtext p {
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 696px) {
+  .awesome-title {
+    font-size: 1.8em !important;
+  }
+
+  .awesome-subtitle {
+    padding-bottom: 5px;
+  }
+
+  .awesome-item__subtext p {
+    padding-bottom: 10px;
+  }
+
+  .awesome-item__circle {
+    width: 50px;
+    height: 50px;
+  }
+  .awesome__icon {
+    height: 50%;
+  }
+}
